@@ -1,2 +1,8 @@
 # Forecasting-Air-Quality-based-on-Traffic-and-Weather-Data
-Green Future Challenge Internship in Auckland ICT Graduate School
+
+<ol>
+  
+  **<li>The project is the data science project Green Future Challenge Internship in Auckland ICT Graduate School</li>**
+  
+</ol>
+
