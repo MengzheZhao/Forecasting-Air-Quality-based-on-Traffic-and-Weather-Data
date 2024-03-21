@@ -1,0 +1,80 @@
+/* AirQualityAPIbuilder.css */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+.grid-container{
+  display: grid;
+  grid-template-rows: auto auto auto auto auto 1fr ; 
+  grid-template-columns: 1fr 1fr; 
+  height: auto; 
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+.header {
+  background-color: rgb(84, 72, 72);
+  color: white;
+  padding: 20px;
+  text-align: center;
+  grid-row: 1; 
+  grid-column: span 2; 
+}
+
+
+.normal-section {
+  background-color: rgb(20, 122, 186);
+  color: white;
+  padding: 20px;
+  border-bottom: 1px solid black;
+}
+
+.airquality1-section, .history1-section {
+  background-color: white;
+  padding: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease; 
+  border-bottom: 1px solid black;
+}
+
+.airquality1-section:hover,
+.airquality1-section.clicked,
+.history1-section:hover,
+.history1-section.clicked {
+  background-color: rgb(112, 226, 116);
+  border-bottom: 1px solid black;
+  
+}
+
+.generated-header {
+  grid-row: 4; 
+  grid-column: span 2; 
+}
+
+
+.input-section,.city-section,.version-section {
+  background-color: white;
+  padding: 20px;
+  border-bottom: 1px solid black;
+}
+
+.submit-section{
+  background-color: rgb(148, 236, 110);
+  padding: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease; 
+  border-bottom: 1px solid black;
+  grid-column: span 2;
+  text-align: center;
+}
+.output-section {
+  max-height: 500px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  grid-column: span 2;
+  overflow-y: auto;
+  background-color: aliceblue;
+}
