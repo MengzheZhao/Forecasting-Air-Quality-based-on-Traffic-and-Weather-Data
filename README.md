@@ -18,5 +18,5 @@
 
 **<li>The web application setting up instruction is in the 'Web frontend and backend' folder.</li>**
 
-**<li>The outline of the project is in the .pdf file 'presentation'.</li>**
+**<li>The outline and the key insights of the project are in the .pdf file 'presentation'.</li>**
 </ol>
