@@ -1,0 +1,113 @@
+{selectedVersion === 'Professional' && (
+      <>
+        <div className="normal-section">
+          <h3>Date</h3>
+          <p>Predicted time point</p>
+        </div>
+        <div className='input-section'>
+          <h3>Date=</h3>
+          <input
+            type="text"
+            pattern="\d{4}-\d{2}-\d{2}"
+            value={dateValue}
+            onChange={(e) => setDateValue(e.target.value)}
+          />
+          <p>Example:2024-01-01</p>
+        </div>
+        <div className='normal-section'>
+          <h3>WDir</h3>
+          <p>Wind direction (degrees).</p>
+        </div>
+        <div className='input-section'>
+          <h3>WDir=</h3>
+          <input
+           type="int"          
+          />
+          <p>Realtime WDir is </p>
+        </div>
+        <div className='normal-section'>
+          <h3>WSpd</h3>
+          <p>Wind speed (Default m/s).</p>
+        </div>
+        <div className='input-section'>
+          <h3>WSpd=</h3>
+          <input
+           type="int"          
+          />
+          <p>Realtime WDir is </p>
+        </div>
+        <div className='normal-section'>
+          <h3>Rainfall</h3>
+          <p> Liquid equivalent precipitation rate (default mm/hr).</p>
+        </div>
+        <div className='input-section'>
+          <h3>Rainfall=</h3>
+          <input
+           type="int"          
+          />
+          <p>Realtime Rainfall is </p>
+        </div>
+        <div className='normal-section'>
+          <h3>RH</h3>
+          <p>Relative humidity (%).</p>
+        </div>
+        <div className='input-section'>
+          <h3>RH=</h3>
+          <input
+           type="int"          
+          />
+          <p>Realtime Relative humidity is </p>
+        </div>
+        <div className='normal-section'>
+          <h3>Tmax</h3>
+          <p>Maximum Temperature (°C).</p>
+        </div>
+        <div className='input-section'>
+          <h3>Tmax=</h3>
+          <input
+           type="int"          
+          />
+          <p>Today's Maximum Temperature is </p>
+        </div>
+        <div className='normal-section'>
+          <h3>Tmin</h3>
+          <p>Minimum Temperature (°C).</p>
+        </div>
+        <div className='input-section'>
+          <h3>Tmin=</h3>
+          <input
+           type="int"          
+          />
+          <p>Today's  Minimum Temperature is </p>
+        </div>
+        <div className='normal-section'>
+          <h3>LightCount</h3>
+          <p>Light car traffic flow</p>
+        </div>
+        <div className='input-section'>
+          <h3>LightCount=</h3>
+          <input
+          type = 'int'
+          />
+          <p>The nearest small car traffic volume is</p>
+        </div>
+        <div className='normal-section'>
+          <h3>HeavyCount</h3>
+          <p>Heavy car traffic flow</p>
+        </div>
+        <div className='input-section'>
+          <h3>HeavyCount=</h3>
+          <input
+          type = 'int'
+          />
+          <p>The nearest heavy car traffic volume is</p>
+        </div>
+      </>
+    )}
+              <div className='submit-section' onClick={() => sendAnotherRequest()}>
+            <h3>Make API request</h3>
+          </div>
+          <div className='output-section'>
+            <h3>API Output</h3>
+            <pre>{JSON.stringify(apiOutput, null, 2)}</pre>
+    </div>

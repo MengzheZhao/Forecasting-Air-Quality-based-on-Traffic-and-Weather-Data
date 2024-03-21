@@ -1,0 +1,55 @@
+/* InputBox.css */
+
+.input-box {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f0f0f0;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.input-label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+.input-field {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 16px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.submit-button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.submit-button:hover {
+  background-color: #45a049;
+}
+
+.prediction-result {
+  background-color: #f8f8f8;
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin-top: 20px;
+}
+
+.prediction-label {
+  font-weight: bold;
+}
+
+.prediction-value {
+  margin-left: 10px;
+}
